@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.why.wuhuiying_fjindong">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".Shouye.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Shouye.Resou.ResouActivity" />
+        <activity android:name=".Shouye.SearchActivity" />
+        <activity android:name=".Shouye.Shouye" />
+        <activity android:name="com.dash.zxinglibrary.activity.CaptureActivity" />
+        <activity android:name=".Shouye.CustomCaptrueActivity" />
+        <activity android:name=".My.view.WoDeSheZhi" />
+        <activity android:name=".DL.bean.DengLu" />
+        <activity android:name=".DL.bean.ZhuCe" />
+        <activity android:name=".Gouwuche.Shangpinxiangqing" />
+        <activity android:name=".DingdanActivity" />
+        <activity android:name=".Fangda.FangdaImageActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Shouye.Resou.ResouActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=" 返回 "/>
+        <EditText
+            android:id="@+id/et_sou"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:hint="京东超级品牌日，满1000减100"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/btn_sou"
+            android:onClick="add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="搜索"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="热搜"
+
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <com.why.wuhuiying_fjindong.Shouye.Resou.ReSouView
+        android:id="@+id/reSouView"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></com.why.wuhuiying_fjindong.Shouye.Resou.ReSouView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="历史记录"
+        android:textSize="24dp"
+        />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/lv"
+        ></ListView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清空历史记录"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:onClick="delall"
+        android:visibility="invisible"
+        android:id="@+id/btn"
+        />
+</LinearLayout>

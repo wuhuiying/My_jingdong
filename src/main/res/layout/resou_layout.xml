@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_height="50dp"
+   >
+    <RelativeLayout
+
+        android:id="@+id/saoyisao"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+
+            android:id="@+id/fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="＜"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dot"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/sou"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_sousuo"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="慧爷餐厅"
+            android:paddingLeft="50dp"
+            android:scrollbars="none" />
+        <ImageView
+            android:id="@+id/iv1_sousuo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/dog"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+
+        android:layout_height="match_parent">
+      <CheckBox
+          android:layout_width="36dp"
+          android:layout_height="36dp"
+          android:id="@+id/checkbox"
+          android:layout_centerInParent="true"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:button="@null"
+          android:background="@drawable/search_check"
+          />
+    </RelativeLayout>
+
+</LinearLayout>
